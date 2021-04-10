@@ -32,7 +32,7 @@
                   <div class="input-group input-group-sm" style="width: 150px;">
                     <div class="input-group-append">
                     <button class="btn btn-primary" type="submit" id="modificar" name="modificar"
-                    style="border-radius: 7%;">
+                    style="border-radius: 7%;" onclick="vistaRegistrar()">
                     <i class="fas fa-user-plus"></i>&nbsp;&nbsp;Crear</button>
                     </div>
                   </div>
@@ -79,6 +79,18 @@
   </div>
 
   <script>
+
+function vistaRegistrar() {
+        $.ajax({
+            url: 'index.php/empleados/vistaAgregarEmpleado',
+            method: 'POST',
+            dataType: 'html',
+            data: {},
+            success: function (data) {
+                $('#content-wrapper').html(data);
+            }
+        });
+    }
 
   </script>
   

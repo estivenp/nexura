@@ -105,28 +105,9 @@
 
   <script>
 
-// $(document).ready(function () {
-//     $('button.registrar').click(function (event) {
-//         event.preventDefault();
-//         agregar();
-//     });
-//     $('#boletin').click(function(event){
-//       var bol=document.getElementById(boletin);
-//       console.log(bol);
-//     });
-// })
+$(document).ready(function () {
+  $("#basic-form").validate();
+})
   
-//   function agregar(){
-//     alert("e");
-//     $.ajax({
-//         url: 'index.php/academico/agregarProf',
-//         method: 'POST',
-//         dataType: 'html',
-//         data: $('form_empl').serialize(),
-//         success: function (data) {
-//             $('#content-wrapper').html(data);
-//         }
-//     });
-//   }
 
   </script>

@@ -23,8 +23,8 @@ class Empleado_model extends CI_Model {
     }
 
     public function insertarEmpleado($data) {
-        $this->db->insert('empleados', $data);
-        // return $this->db->insert_id();
+        $id=$this->db->insert('empleados', $data);
+        print_r($id);
     }
 
     public function obtenerEmpl($id) {

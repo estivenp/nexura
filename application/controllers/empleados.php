@@ -32,7 +32,8 @@ class Empleados extends CI_Controller {
 		$data=array("nombre"=>$this->input->post("nombre"),"email"=>$this->input->post("email"),
 		"sexo"=>$sex,"area_id"=>intval($this->input->post("area")),"boletin"=>$bol
 		,"descripcion"=>$this->input->post("descripcion"));
-		$this->md_empleado->insertarEmpleado($data);
+		$id=$this->md_empleado->insertarEmpleado($data);
+		print_r($id);die();
 		$this->load->view('base');
 	}
 

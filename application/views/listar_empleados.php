@@ -61,9 +61,9 @@
                       <td><?=$empleado->area?></td>
                       <td><?php if($empleado->boletin==0){echo "NO";}
                         else{echo "SI";}?></td>
-                      <td><form action="index.php/Academico/irModificar/<?=$empleado->id?>" method="get">
+                      <td><form action="index.php/empleados/irModificar/<?=$empleado->id?>" method="get">
                       <button ><i class="fas fa-edit"></i></button></form></td>
-                      <td><form action="index.php/Academico/irModificar/<?=$empleado->id?>" method="get">
+                      <td><form action="index.php/empleados/irModificar/<?=$empleado->id?>" method="get">
                       <button ><i class="fas fa-trash-alt"></i></button></form></td>
                     </tr>
                   <?php }    ?>
@@ -79,18 +79,6 @@
   </div>
 
   <script>
-  
-      function irModificar(id){
-        $.ajax({
-          url: 'index.php/Academico/irModificar',
-          method: 'POST',
-          dataType: 'html',
-          data: {id:id},
-          success: function (data) {
-              $('#content-wrapper').html(data);
-          }
-        });
-      }
 
   </script>
   

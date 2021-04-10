@@ -15,49 +15,6 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 
 
-  <!-- <style>
-    .color-palette {
-      height: 35px;
-      line-height: 35px;
-      text-align: right;
-      padding-right: .75rem;
-    }
-
-    .color-palette.disabled {
-      text-align: center;
-      padding-right: 0;
-      display: block;
-    }
-
-    .color-palette-set {
-      margin-bottom: 15px;
-    }
-
-    .color-palette span {
-      display: none;
-      font-size: 12px;
-    }
-
-    .color-palette:hover span {
-      display: block;
-    }
-
-    .color-palette.disabled span {
-      display: block;
-      text-align: left;
-      padding-left: .75rem;
-    }
-
-    .color-palette-box h4 {
-      position: absolute;
-      left: 1.25rem;
-      margin-top: .75rem;
-      color: rgba(255, 255, 255, 0.8);
-      font-size: 12px;
-      display: block;
-      z-index: 7;
-    }
-  </style> -->
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -92,7 +49,10 @@ $(document).ready(function () {
   var aux=URLactual.toString().split("/");
   if(aux[aux.length-2]!="prueba_nexura"){
     location.href=aux[0]+"/"+aux[1]+"/"+aux[2]+"/"+aux[3]+"";
-    alert("El empleado fue agregado con exito");
+    if(aux[aux.length-1]!="agregarEmpleado"){
+      alert("El empleado fue agregado con exito");
+    }
+    else{alert("El empleado fue actualizado con exito");}
   }
   vistaLista();
 });

@@ -27,5 +27,13 @@ class Empleado_model extends CI_Model {
         // return $this->db->insert_id();
     }
 
+    public function obtenerEmpl($id) {
+        $query = $this->db->where('id', $id)->get('empleados');
+        return $query->result()[0];
+    }
+
+    public function editarEmp($data, $id) {
+        $this->db->where('id', $id)->update('empleados', $data);
+    }
 
 }

@@ -1,9 +1,18 @@
-# CodeIgniter 2
-Open Source PHP Framework (originally from EllisLab)
+# prueba_nexura
 
-For more info, please refer to the user-guide at http://www.codeigniter.com/userguide2/  
-(also available within the download package for offline use)
+Este repositorio contiene lo archvos fuente de la pureba tecnica de la empresa nexura para desarrolladores backend php
 
-**WARNING:** *CodeIgniter 2.x is no longer under development and only receives security patches until October 31st, 2015.
-Please update your installation to the latest CodeIgniter 3.x version available
-(upgrade instructions [here](http://www.codeigniter.com/userguide3/installation/upgrade_300.html)).*
+## Contenido
+
+* `Proyecto`: Solucion de la prueba
+* `script DB`: Script de la base de datos. el script se encuenta en la carpeta principal y se llamo 'prueba_nexura.sql'
+
+## Tecnologias utilizadas
+
+* `CodeIgneiter`: Se utiliza el framework de codeIneiter para el backend, es un framework liviano que no necesita instalacion. Para la configuracion de la base
+datos hay que ir a la siguiente ruta prueba_nexura/applicacion/config/database.php y reemplazar los datos de conexion por los de su DB
+
+
+* `Mysql`: Se utiliza mysql para la base de datos
+
+* `javascript` Para el frontend se utiliza js con jquery

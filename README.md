@@ -9,8 +9,8 @@ Este repositorio contiene lo archvos fuente de la pureba tecnica de la empresa n
 
 ## Tecnologias utilizadas
 
-* `CodeIgneiter`: Se utiliza el framework de codeIneiter para el backend, es un framework liviano que no necesita instalacion. Para la configuracion de la base
-datos hay que ir a la siguiente ruta prueba_nexura/applicacion/config/database.php y reemplazar los datos de conexion por los de su DB
+* `CodeIgneiter`: Se utiliza el framework de codeIneiter para el backend, es un framework liviano de php que no necesita instalacion. Para la configuracion de la base
+datos hay que ir a la siguiente ruta prueba_nexura/applicacion/config/database.php y reemplazar los datos de conexion por los de su DB. la version de php utilizada es 7.2
 
 
 * `Mysql`: Se utiliza mysql para la base de datos
